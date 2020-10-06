@@ -355,6 +355,7 @@ body.crypt-dark .crypt-boxed-area{
     padding: 9px 0px;
     display: inline-block;
     font-size: 11px;
+    position: relative;
 }
 .crypt-heading-menu li a:hover{
     color: #f7614e;
@@ -433,7 +434,7 @@ body.crypt-dark .crypt-boxed-area{
     position: absolute;
     opacity: 0;
     padding: 27px;
-    box-shadow: 0 4px 10px #000;
+    box-shadow: 0 4px 10px #c7c7c7;
     border-radius: 3px;
     transition: all 0.4s ease;
     transform: scale(0);
@@ -1067,7 +1068,7 @@ body.crypt-dark .crypt-big-list li a:focus{
 }
 .crypt-dash-withdraw{}
 .crypt-withdraw-heading{
-    background: #202943;
+    background: #ffffff;
     padding: 25px 0 25px 35px;
 }
 .crypt-withdraw-heading p{

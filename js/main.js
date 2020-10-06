@@ -1,6 +1,5 @@
-
 /*
------------ Market Charts -----------------
+-------------- Line Charts -------------------
 */
 var options = {
   bezierCurve : true,
@@ -118,7 +117,7 @@ if(chartsIndiv.length > 0){
       labels : ["1","2","3","4","5","6","7","8","9"],
       datasets : [
           {
-              backgroundColor : gradient,
+              backgroundColor : 'transparent',
               borderColor : '#' + border,
               data : data,
               bezierCurve : true
@@ -133,9 +132,10 @@ if(chartsIndiv.length > 0){
   }
 }
 
-/*************
--------------------- Theme JS elements ----------------
-**************/
+
+/*
+-------------------  Theme JS  -----------------
+*/
 jQuery(document).ready(function() {
   jQuery(document).on('click', '.crypt-header i.menu-toggle', function(){
     jQuery('.crypt-mobile-menu').toggleClass('show');
@@ -178,8 +178,10 @@ jQuery(document).ready(function() {
    });
 
 
-   /*------------------------
-   --------------- Candle Stick chart ---------------*/
+   /*
+        ----------------- Trading view ----------------0
+   */
+
    if(document.getElementById('crypt-candle-chart')){
      new TradingView.widget(
        {
@@ -187,10 +189,10 @@ jQuery(document).ready(function() {
           "symbol": "NASDAQ:AAPL",
           "interval": "D",
           "timezone": "Etc/UTC",
-          "theme": "Dark",
+          "theme": "Light",
           "style": "1",
           "locale": "en",
-          "toolbar_bg": "rgba(0, 0, 0, 1)",
+          "toolbar_bg": "rgba(255, 255, 255, 1)",
           "enable_publishing": false,
           "allow_symbol_change": true,
           "container_id": "crypt-candle-chart"
